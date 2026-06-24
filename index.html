@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serenity Studio | Wellness, Spa & Recovery</title>
+    <meta
+      name="description"
+      content="Professionelle Wellnessstudio-Webseite mit Booking-Kalender, Spa-Angeboten, Recovery-Zonen und Premium-Atmosphäre."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-a"></div>
+      <div class="ambient ambient-b"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#top">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2c4.4 3 7 7 7 10.8 0 4.7-3.3 9.2-7 9.2s-7-4.5-7-9.2C5 9 7.6 5 12 2Z" />
+              <path d="M12 7c1.7 2 2.8 4.3 2.8 6.7 0 2.6-1.4 5-2.8 5s-2.8-2.4-2.8-5C9.2 11.3 10.3 9 12 7Z" />
+            </svg>
+          </span>
+          <span>
+            <strong>Serenity Studio</strong>
+            <small>Wellness, Spa & Recovery</small>
+          </span>
+        </a>
+
+        <nav class="topnav" aria-label="Hauptnavigation">
+          <a href="#angebote">Angebote</a>
+          <a href="#kalender">Kalender</a>
+          <a href="#erlebnis">Erlebnis</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <a class="topbar-cta" href="#kalender">Termin buchen</a>
+      </header>
+
+      <main id="top">
+        <section class="hero hero-image-first">
+          <figure class="hero-banner" aria-hidden="true">
+            <img src="/assets/hero-wide-v2.png" alt="" />
+            <div class="hero-overlay">
+              <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Calm body. Healthy mind.
+              </div>
+              <h1>Ein Wellnessstudio für Ruhe, Recovery und Private Spa.</h1>
+              <p>Warmes Licht, klare Materialien und eine exklusive Atmosphäre für deinen Besuch.</p>
+            </div>
+          </figure>
+
+          <div class="hero-actions-row">
+            <p class="lead">
+              Sauna, Ice Bath, Massage und Private Spa in einer ruhigen, hochwertigen Umgebung.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#kalender">Verfügbarkeiten ansehen</a>
+              <a class="button button-secondary" href="#angebote">Behandlungen entdecken</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <strong>18+</strong>
+                <span>Erlebnis-Module</span>
+              </div>
+              <div class="stat">
+                <strong>2.400</strong>
+                <span>zufriedene Gäste</span>
+              </div>
+              <div class="stat">
+                <strong>4.9/5</strong>
+                <span>Ø Bewertung</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mood-band" aria-label="Markenstimmung">
+          <div class="mood-phrase">HEALTHY BODY.</div>
+          <div class="mood-phrase">CALM MIND.</div>
+          <div class="mood-copy">Studio · Sauna · Recovery · Massage</div>
+        </section>
+
+        <section class="booking-section" id="kalender">
+          <div class="booking-shell">
+            <div class="booking-visual-strip">
+              <img src="/assets/editorial-lounge.png" alt="" />
+            </div>
+            <div class="booking-topline">
+              <div class="progress" aria-hidden="true">
+                <span class="progress-active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="booking-meta">
+                <strong>Wähle dein Setup</strong>
+                <span>Verfügbarkeit, Gäste, Dauer und Suite-Kategorie</span>
+              </div>
+            </div>
+
+            <div class="filters" aria-label="Buchungsfilter">
+              <button class="filter-chip" data-filter="location">
+                <span class="chip-label">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 21s6-5.3 6-11a6 6 0 0 0-12 0c0 5.7 6 11 6 11Z" />
+                    <circle cx="12" cy="10" r="2.4" />
+                  </svg>
+                  Standort
+                </span>
+                <strong>Düsseldorf Heerdt</strong>
+              </button>
+
+              <button class="filter-chip" data-filter="guests">
+                <span class="chip-label">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 13.5a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" />
+                    <path d="M16 11.5a3.2 3.2 0 1 0-3.2-3.2A3.2 3.2 0 0 0 16 11.5Z" />
+                    <path d="M3 20.5c0-2.6 2.5-4.7 5.5-4.7s5.5 2.1 5.5 4.7" />
+                    <path d="M13.2 20.5c.4-2.2 2.4-3.9 4.8-3.9 2.7 0 5 1.9 5 4.2" />
+                  </svg>
+                  Gäste
+                </span>
+                <strong>2 Personen</strong>
+              </button>
+
+              <button class="filter-chip" data-filter="duration">
+                <span class="chip-label">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="8.5" />
+                    <path d="M12 8v4l2.8 1.8" />
+                  </svg>
+                  Dauer
+                </span>
+                <strong>2 Stunden</strong>
+              </button>
+
+              <button class="filter-chip" data-filter="suite">
+                <span class="chip-label">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m12 3 2.6 5.2 5.8.8-4.2 4.1 1 5.8L12 16.2 6.8 19l1-5.8-4.2-4.1 5.8-.8L12 3Z" />
+                  </svg>
+                  Suitekategorie
+                </span>
+                <strong>Alle</strong>
+              </button>
+            </div>
+
+            <div class="calendar-grid" id="calendarGrid" aria-live="polite"></div>
+
+            <div class="booking-footer">
+              <a href="#kontakt" class="waitlist-link">Termin nicht verfügbar? Zur Warteliste</a>
+              <div class="legend" aria-label="Legende">
+                <span><i class="dot dot-available"></i> Verfügbar</span>
+                <span><i class="dot dot-short"></i> Kürzere Dauer verfügbar</span>
+              </div>
+            </div>
+
+            <div class="selection-hint" id="selectionHint">Mindestens einen Tag auswählen</div>
+          </div>
+        </section>
+
+        <section class="features" id="angebote">
+          <div class="section-heading">
+            <span class="section-kicker">Angebote</span>
+            <h2>Behandlungen für Erholung, Pflege und Ruhe.</h2>
+            <p>Ausgewählte Anwendungen, private Zeitfenster und klare Buchungsoptionen.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">01</div>
+              <h3>Private Spa Sessions</h3>
+              <p>Exklusive Zeitfenster mit Sauna, Ruhebereich und abgestimmten Ritualen.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">02</div>
+              <h3>Recovery & Reset</h3>
+              <p>Ideal nach Training, Stressphasen oder für fokussierte Regeneration.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">03</div>
+              <h3>Massage & Bodywork</h3>
+              <p>Deep Tissue, Relax Massage und gezielte Anwendungen für nachhaltige Wirkung.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">04</div>
+              <h3>Memberships</h3>
+              <p>Monatsmodelle für regelmäßige Besuche mit Vorteilen, Upgrades und Priority-Booking.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="trust-strip" aria-label="Vertrauensmerkmale">
+          <div class="trust-item">
+            <strong>Premium Location</strong>
+            <span>Ruhige, moderne Studioatmosphäre</span>
+          </div>
+          <div class="trust-item">
+            <strong>Flexible Slots</strong>
+            <span>Verfügbarkeit direkt im Kalender sichtbar</span>
+          </div>
+          <div class="trust-item">
+            <strong>Kuratiert</strong>
+            <span>Sauna, Recovery, Massage und Private Spa</span>
+          </div>
+          <div class="trust-item">
+            <strong>Persönlich</strong>
+            <span>Individuelle Betreuung statt Massenbetrieb</span>
+          </div>
+        </section>
+
+        <section class="pricing" aria-labelledby="preise-title">
+          <div class="section-heading">
+            <span class="section-kicker">Preise</span>
+            <h2 id="preise-title">Klare Pakete für einfache Buchungen.</h2>
+            <p>Wähle das passende Zeitfenster für deinen Besuch.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card">
+              <div class="pricing-top">
+                <h3>Recovery Start</h3>
+                <p>Perfekt für den Einstieg</p>
+              </div>
+              <strong>49 €</strong>
+              <ul>
+                <li>60 Minuten Zugang</li>
+                <li>Sauna oder Ice Bath</li>
+                <li>1 Getränk inklusive</li>
+              </ul>
+              <a class="button button-secondary" href="#kalender">Jetzt wählen</a>
+            </article>
+
+            <article class="pricing-card pricing-card-featured">
+              <div class="pricing-top">
+                <span class="pricing-badge">Beliebt</span>
+                <h3>Signature Suite</h3>
+                <p>Die Premium-Erfahrung</p>
+              </div>
+              <strong>89 €</strong>
+              <ul>
+                <li>120 Minuten Private Spa</li>
+                <li>Sauna + Recovery Zone</li>
+                <li>Handtücher & Tee</li>
+              </ul>
+              <a class="button button-primary" href="#kalender">Jetzt buchen</a>
+            </article>
+
+            <article class="pricing-card">
+              <div class="pricing-top">
+                <h3>Exclusive Day</h3>
+                <p>Für Paare oder kleine Gruppen</p>
+              </div>
+              <strong>149 €</strong>
+              <ul>
+                <li>180 Minuten Nutzung</li>
+                <li>2 bis 4 Personen</li>
+                <li>Massage als Upgrade buchbar</li>
+              </ul>
+              <a class="button button-secondary" href="#kontakt">Anfragen</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="process" aria-labelledby="ablauf-title">
+          <div class="section-heading">
+            <span class="section-kicker">Ablauf</span>
+            <h2 id="ablauf-title">So funktioniert die Buchung.</h2>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-step">
+              <span>1</span>
+              <h3>Datum auswählen</h3>
+              <p>Im Kalender siehst du auf einen Blick, welche Tage verfügbar sind.</p>
+            </article>
+            <article class="process-step">
+              <span>2</span>
+              <h3>Package wählen</h3>
+              <p>Standort, Gäste, Dauer und Suitekategorie lassen sich sofort anpassen.</p>
+            </article>
+            <article class="process-step">
+              <span>3</span>
+              <h3>Bestätigen</h3>
+              <p>Die Anfrage geht an das Studio und wird mit dir abgestimmt oder bestätigt.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="story" id="erlebnis">
+          <div class="story-copy">
+            <span class="section-kicker">Erlebnis</span>
+            <h2>Räume mit Licht, Material und Atmosphäre.</h2>
+            <p>Ein Studioauftritt mit klarer Bildsprache, ruhiger Struktur und hochwertigen Details.</p>
+            <ul class="benefits">
+              <li>Private Spa und Recovery</li>
+              <li>Massage und Wellness-Rituale</li>
+              <li>Flexible Buchung über den Kalender</li>
+            </ul>
+          </div>
+
+          <div class="story-panel">
+            <div class="story-badge">Open Daily</div>
+            <h3>Private Sessions für Ruhe und Erholung.</h3>
+            <p>Wähle Standort, Gäste, Dauer und Datum.</p>
+            <a class="button button-primary" href="#kalender">Jetzt starten</a>
+          </div>
+        </section>
+
+        <section class="photo-grid" aria-label="Fotostil">
+          <figure class="photo-tile photo-tile-large">
+            <img src="/assets/editorial-suite.png" alt="Private Wellness Suite mit Spa-Becken und Holzdetails" />
+          </figure>
+
+          <div class="photo-stack">
+            <div class="photo-row">
+              <figure class="photo-tile photo-tile-small">
+                <img src="/assets/editorial-lounge.png" alt="Wellness-Lounge mit Holz, Glas und warmem Licht" />
+              </figure>
+              <figure class="photo-tile photo-tile-small">
+                <img src="/assets/editorial-hydro.png" alt="Hydro Spa Becken mit Champagnergläsern" />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq" aria-labelledby="faq-title">
+          <div class="section-heading">
+            <span class="section-kicker">FAQ</span>
+            <h2 id="faq-title">Häufige Fragen vor der Buchung.</h2>
+          </div>
+
+          <div class="faq-grid">
+            <details class="faq-item" open>
+              <summary>Kann ich kurzfristig buchen?</summary>
+              <p>Ja. Verfügbare Termine sind direkt im Kalender sichtbar und können kurzfristig angefragt werden.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Ist die Seite für mobile Geräte optimiert?</summary>
+              <p>Ja. Alle Bereiche sind responsiv aufgebaut und passen sich an Desktop, Tablet und Smartphone an.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Kann man das Design an mein Studio anpassen?</summary>
+              <p>Ja. Farben, Bilder, Texte, Leistungen und Buchungslogik lassen sich auf deine Marke übertragen.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="testimonials">
+          <div class="testimonial">
+            <p>
+              „Das Studio fühlt sich sofort hochwertig an. Die Buchung ist klar,
+              die Atmosphäre ruhig und die Verfügbarkeit direkt sichtbar.“
+            </p>
+            <span>Anna K., Mitglied seit 2025</span>
+          </div>
+          <div class="testimonial">
+            <p>
+              „Die Kombination aus Recovery, Sauna und Massage ist exakt das,
+              was moderne Wellnessgäste erwarten.“
+            </p>
+            <span>Michael S., Personal Training Studio</span>
+          </div>
+        </section>
+
+        <section class="contact-panel" id="kontakt">
+          <div class="contact-copy">
+            <span class="section-kicker">Kontakt</span>
+            <h2>Kontakt und Anfrage.</h2>
+            <p>Schicke deine Anfrage oder ruf direkt an.</p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:hello@serenity-studio.de">Kontakt aufnehmen</a>
+              <a class="button button-secondary" href="tel:+492112345678">Anrufen</a>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" placeholder="Vorname Nachname" />
+            </label>
+            <label>
+              E-Mail
+              <input type="email" placeholder="name@beispiel.de" />
+            </label>
+            <label>
+              Wunsch
+              <textarea rows="4" placeholder="Zum Beispiel: 2 Personen, Freitagabend, 2 Stunden"></textarea>
+            </label>
+            <button type="button" class="button button-primary">Anfrage vorbereiten</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>Serenity Studio Düsseldorf</strong>
+          <p>Heerdt · Private Spa · Recovery · Massage</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:hello@serenity-studio.de">hello@serenity-studio.de</a>
+          <a href="tel:+492112345678">+49 211 2345678</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
